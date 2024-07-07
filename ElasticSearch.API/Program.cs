@@ -1,6 +1,4 @@
 
-using Elasticsearch.Net;
-using Nest;
 using ElasticSearch.API.Extensions;
 using ElasticSearch.API.Services;
 using ElasticSearch.API.Repositories;
@@ -16,6 +14,7 @@ namespace ElasticSearch.API
             // Add services to the container.
             builder.Services.AddScoped<ProductService>();
             builder.Services.AddScoped<ProductRepository>();
+            builder.Services.AddScoped<ECommerceRespository>();
             builder.Services.AddElastic(builder.Configuration);
 
             builder.Services.AddControllers();

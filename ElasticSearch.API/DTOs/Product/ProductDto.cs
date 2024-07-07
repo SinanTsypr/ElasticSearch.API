@@ -1,5 +1,4 @@
 ﻿using ElasticSearch.API.DTOs.ProductFeature;
-using Nest;
 
 namespace ElasticSearch.API.DTOs.Product
 {
