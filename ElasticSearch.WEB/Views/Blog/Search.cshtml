@@ -1,20 +1,13 @@
 ﻿@model List<BlogViewModel>
 
 <div class="container">
-
     <div class="col-md-10 offset-md-1">
-
         <form asp-action="Search">
-
             <div class="mb-3">
-
                 <label>Search(Title,Content,Tags)</label>
                 <input value="@ViewBag.SearchText" name="searchText" class="form-control" />
-
             </div>
-
             <button>Search</button>
-
         </form>
 
         @if (!Model.Any())
@@ -50,5 +43,4 @@
             </table>
         }
     </div>
-
 </div>
